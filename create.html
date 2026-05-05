@@ -1,28 +1,70 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
     <title>Create Account</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #0f172a;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .container {
+            background: #1e293b;
+            padding: 30px;
+            border-radius: 10px;
+            width: 300px;
+            box-shadow: 0 0 15px rgba(0,0,0,0.5);
+        }
+        input {
+            width: 100%;
+            padding: 10px;
+            margin: 8px 0;
+            border-radius: 5px;
+            border: none;
+        }
+        button {
+            width: 100%;
+            padding: 10px;
+            background: #22c55e;
+            border: none;
+            color: white;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        a {
+            display: block;
+            margin-top: 10px;
+            text-align: center;
+            color: #38bdf8;
+            text-decoration: none;
+        }
+    </style>
 </head>
 <body>
 
-<h2>Create Account</h2>
+<div class="container">
+    <h2>Create Account</h2>
 
-<form action="login.html">
-    <label>Email:</label><br>
-    <input type="email" required><br><br>
+    <form action="login.html">
+        <label>Email Address</label>
+        <input type="email" placeholder="Enter your email" required>
 
-    <label>Password:</label><br>
-    <input type="password" required><br><br>
+        <label>Password</label>
+        <input type="password" placeholder="Create a password" required>
 
-    <label>Confirm Password:</label><br>
-    <input type="password" required><br><br>
+        <label>Confirm Password</label>
+        <input type="password" placeholder="Confirm your password" required>
 
-    <button type="submit">Create Account</button>
-</form>
+        <button type="submit">Register</button>
+    </form>
 
-<br>
-
-<a href="login.html">Back to Login</a>
+    <a href="login.html">Back to Login</a>
+</div>
 
 </body>
 </html>
