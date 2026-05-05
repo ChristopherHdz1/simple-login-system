@@ -1,21 +1,57 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Home</title>
+    <meta charset="UTF-8">
+    <title>Dashboard</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #0f172a;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .container {
+            background: #1e293b;
+            padding: 30px;
+            border-radius: 10px;
+            width: 350px;
+            text-align: center;
+        }
+        input {
+            margin: 15px 0;
+        }
+        button {
+            padding: 10px 20px;
+            background: #3b82f6;
+            border: none;
+            color: white;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        a {
+            display: block;
+            margin-top: 15px;
+            color: #f87171;
+            text-decoration: none;
+        }
+    </style>
 </head>
 <body>
 
-<h2>Upload File</h2>
+<div class="container">
+    <h2>File Upload Portal</h2>
 
-<form>
-    <input type="file">
-    <br><br>
-    <button type="submit">Upload</button>
-</form>
+    <form>
+        <input type="file" required>
+        <br>
+        <button type="submit">Upload File</button>
+    </form>
 
-<br>
-
-<a href="login.html">Logout</a>
+    <a href="login.html">Logout</a>
+</div>
 
 </body>
 </html>
